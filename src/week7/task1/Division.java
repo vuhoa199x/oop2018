@@ -1,8 +1,8 @@
 package week7.task1;
 
-public class Addition extends BinaryExpression{
-    Expression left,right;
-    public Addition(Expression left, Expression right){
+public class Division extends BinaryExpression {
+    Expression left, right;
+    public Division(Expression left, Expression right){
         this.left = left;
         this.right = right;
     }
@@ -16,10 +16,10 @@ public class Addition extends BinaryExpression{
     }
     @Override
     public String toString(){
-        return "addition{left: " + left + ", right: " + right + "}";
+        return "Subtraction{ left: " + left + " ,right: " + right + "}";
     }
     @Override
     public int evaluate(){
-        return left.evaluate() + right.evaluate();
+        return left.evaluate() / right.evaluate();
     }
 }
